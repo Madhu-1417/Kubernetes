@@ -60,7 +60,7 @@ communicate with the server. We need software that run containers that is the co
 2- ETCD-
           . It is a  database that stores all information about the cluster in key value format. Kubernetes admin password, pod or cluster regarding information store in ETCD.   
 
-3- Controler-
+3- Controller-
             A controller tracks at least one Kubernetes resource type. These objects have a spec field that represents the desired state. The controller(s) for that
 resource are responsible for making the current state come closer to that desired state.
  
