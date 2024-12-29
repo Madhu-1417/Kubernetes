@@ -15,27 +15,46 @@ Some of the main benefits of using Kubernetes include:
 Kubernetes makes it easy to scale applications up or down by adding or removing containers as needed. This allows applications to automatically adjust to changes in demand and ensures that they can handle large volumes of traffic.
 
 2. High availability:
-It automatically ensures that applications are highly available by scheduling containers across multiple nodes in a cluster and automatically replacing failed containers. This helps prevent downtime & ensures that applications are always available to users.
+It automatically ensures that applications are highly available by scheduling containers across multiple 
+nodes in a cluster and automatically replacing failed containers. This helps prevent downtime & ensures that applications are always available to users.
 
 3. Improved resource utilization:
-Kubernetes automatically schedules containers based on the available resources, which helps to improve resource utilization and reduce waste. This can help reduce costs and improve the efficiency of your applications.
+Kubernetes automatically schedules containers based on the available resources, which helps to improve resource utilization and reduce waste. 
+This can help reduce costs and improve the efficiency of your applications.
 
 4. Easy deployment & updates:
-It makes it easy to deploy & update applications by using a declarative configuration approach. This allows developers to specify the desired state of their applications & it will automatically ensure that the actual state matches the desired state.
+It makes it easy to deploy & update applications by using a declarative configuration approach. This allows developers to specify the 
+desired state of their applications & it will automatically ensure that the actual state matches the desired state.
 
 5. Portable across cloud providers:
-It is portable across different cloud providers, which means that you can use the same tools & processes to manage your applications regardless of where they are deployed. This can make it easier to move applications between cloud providers.
-Overall, Kubernetes offers a number of benefits for managing and deploying containerized applications, including scalability, high availability, improved resource utilization, and portability.
+It is portable across different cloud providers, which means that you can use the same tools & processes to manage your applications 
+regardless of where they are deployed. This can make it easier to move applications between cloud providers.
+Overall, Kubernetes offers a number of benefits for managing and deploying containerized applications, including scalability, 
+high availability, improved resource utilization, and portability.
 
 
 Kubernetes Architecture 
 It is a opensource container management project, It managing containerized workloads and services, that facilitates both declarative configuration and automation.
 
 What is the purpose of kubernetes – 
-The purposes of Kubernetes is to host your applications in the form of containers in an automated fashion so that you can easily deploy as many instances of your application
+The purposes of Kubernetes is to host your applications in the form of containers in an automated fashion so that you can easily deploy as many
+instances of your application.
 as required and easily enable communication between different service within your applications. So, there are many things involved that work together
 to make this possible.
 The Kubernetes cluster consists of a set of nodes, which may be physical or virtual, on premise or on cloud, that host applications in the form of containers
+
+Master node components-
+
+1- API server
+2- ETCD
+3- Controler
+4- Scheduler
+API server-
+entry point of K8s cluster (K8s kubernetes) Interface between master node and worker node, The Kube API server is responsible for 
+orchestrating all operations within the cluster. It exposes the Kubernetes API, 
+which is used by external users to perform management operations on the cluster, as well as the various controllers to monitor the state of 
+the cluster and make necessary changes as required and by the worker nodes to 
+communicate with the server. We need software that run containers that is the container run time engine so we use docker. 
 
 
 
