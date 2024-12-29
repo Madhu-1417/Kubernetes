@@ -49,12 +49,24 @@ Master node components-
 2- ETCD
 3- Controler
 4- Scheduler
-API server-
-entry point of K8s cluster (K8s kubernetes) Interface between master node and worker node, The Kube API server is responsible for 
+
+1- API server-
+            It is a entry point of K8s cluster (K8s kubernetes) Interface between master node and worker node, The Kube API server is responsible for 
 orchestrating all operations within the cluster. It exposes the Kubernetes API, 
 which is used by external users to perform management operations on the cluster, as well as the various controllers to monitor the state of 
 the cluster and make necessary changes as required and by the worker nodes to 
 communicate with the server. We need software that run containers that is the container run time engine so we use docker. 
+
+2- ETCD-
+          . It is a  database that stores all information about the cluster in key value format. Kubernetes admin password, pod or cluster regarding information store in ETCD.   
+
+3- Controler-
+            A controller tracks at least one Kubernetes resource type. These objects have a spec field that represents the desired state. The controller(s) for that
+resource are responsible for making the current state come closer to that desired state.
+ 
+4- Scheduler-
+             The work of scheduler to ensures pods placement and that is responsible for scheduling applications or containers on nodes. identifies the right node to place a container on based
+            on the containers resource requirements, the worker nodes capacity or any other policies such as taints and tolerations or node affinity rules that are on them.
 
 
 
