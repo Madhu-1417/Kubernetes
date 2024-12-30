@@ -1,1 +1,3 @@
 kubernetes importent commands-
+
+1- kubectl run pod- to create pod 
